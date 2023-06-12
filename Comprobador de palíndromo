@@ -1,0 +1,15 @@
+function palindrome(str) {
+
+    var lowerCase=str.toLowerCase();
+    lowerCase=lowerCase.replace(/\W|\_/gi,'');
+
+    var strReversed=lowerCase.split('').reverse();
+
+    var joint=strReversed.join('');
+
+    if(lowerCase===joint) return true;
+
+    else return false;
+}
+
+palindrome("A man, a plan, a canal. Panama");
